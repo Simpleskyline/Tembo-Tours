@@ -3,20 +3,17 @@ import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
+  const isHome = location.pathname === '/';
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 40);
+    const onScroll = () => setScrolled(window.scrollY > 60);
     window.addEventListener('scroll', onScroll);
+    onScroll();
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  useEffect(() => {
-    setMenuOpen(false);
-  }, [location]);
-
-  const isHome = location.pathname === '/';
+  const transparent = isHome && !scrolled;
 
   const navStyle = {
     position: 'fixed',
@@ -29,12 +26,13 @@ const Navbar = () => {
     alignItems: 'center',
     padding: '0 5%',
     height: '70px',
-    transition: 'background 0.3s, box-shadow 0.3s',
-    background: scrolled || !isHome ? '#ffffff' : 'transparent',
-    boxShadow: scrolled || !isHome ? '0 2px 20px rgba(0,0,0,0.08)' : 'none',
+    transition: 'background 0.35s, box-shadow 0.35s',
+    background: transparent ? 'transparent' : '#ffffff',
+    boxShadow: transparent ? 'none' : '0 2px 20px rgba(0,0,0,0.08)',
   };
 
-  const linkColor = scrolled || !isHome ? '#1a1a1a' : '#ffffff';
+  const linkColor = transparent ? '#c8860a' : '#060605';
+  const logoColor = transparent ? '#c8860a' : '#c8860a';
 
   const links = [
     { to: '/', label: 'Home' },
@@ -51,31 +49,35 @@ const Navbar = () => {
           fontFamily: "'Playfair Display', serif",
           fontWeight: 700,
           fontSize: '1.3rem',
-          color: scrolled || !isHome ? '#c8860a' : '#ffffff',
-          transition: 'color 0.3s',
+          color: logoColor,
+          transition: 'color 0.35s',
         }}>
           Tembo Tours
         </span>
       </Link>
 
       <ul style={{ display: 'flex', listStyle: 'none', gap: '2rem', alignItems: 'center', margin: 0, padding: 0 }}>
-        {links.map(({ to, label }) => (
-          <li key={to} style={{ display: window.innerWidth < 768 ? 'none' : 'block' }}>
-            <Link
-              to={to}
-              style={{
-                color: location.pathname === to ? '#c8860a' : linkColor,
-                fontWeight: location.pathname === to ? 600 : 400,
-                fontSize: '0.95rem',
-                transition: 'color 0.2s',
-                borderBottom: location.pathname === to ? '2px solid #c8860a' : '2px solid transparent',
-                paddingBottom: '2px',
-              }}
-            >
-              {label}
-            </Link>
-          </li>
-        ))}
+        {links.map(({ to, label }) => {
+          const isActive = location.pathname === to;
+          return (
+            <li key={to}>
+              <Link
+                to={to}
+                style={{
+                  color: isActive ? '#c8860a' : linkColor,
+                  fontWeight: isActive ? 600 : 400,
+                  fontSize: '0.95rem',
+                  transition: 'color 0.2s',
+                  paddingBottom: '3px',
+                  borderBottom: isActive ? '2px solid #c8860a' : '2px solid transparent',
+                  textShadow: transparent && !isActive ? '0 1px 3px rgba(0,0,0,0.4)' : 'none',
+                }}
+              >
+                {label}
+              </Link>
+            </li>
+          );
+        })}
         <li>
           <Link
             to="/contact"
@@ -86,7 +88,6 @@ const Navbar = () => {
               borderRadius: '6px',
               fontWeight: 600,
               fontSize: '0.9rem',
-              transition: 'background 0.2s',
             }}
           >
             Book Now

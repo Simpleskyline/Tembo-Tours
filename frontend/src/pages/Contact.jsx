@@ -80,7 +80,7 @@ const Contact = () => {
 
               {[
                 { icon: '📍', title: 'Our Office', info: 'Waiyaki Way, Nairobi, Kenya' },
-                { icon: '📞', title: 'Phone', info: '+254 700 000 000' },
+                { icon: '📞', title: 'Phone', info: '+254 712 345 678' },
                 { icon: '📧', title: 'Email', info: 'info@tembotours.co.ke' },
                 { icon: '🕐', title: 'Working Hours', info: 'Mon-Sat: 8am - 6pm EAT' },
               ].map(({ icon, title, info }) => (
@@ -96,7 +96,7 @@ const Contact = () => {
               <div style={{ marginTop: '2rem', padding: '1.5rem', background: '#fdf5e8', borderRadius: '10px', borderLeft: '4px solid #c8860a' }}>
                 <p style={{ fontWeight: 600, marginBottom: '0.4rem', color: '#1a1a1a' }}>Emergency Line</p>
                 <p style={{ color: '#666', fontSize: '0.88rem' }}>For urgent assistance during your tour, call our 24/7 hotline:</p>
-                <p style={{ fontWeight: 700, color: '#c8860a', marginTop: '0.4rem' }}>+254 722 000 000</p>
+                <p style={{ fontWeight: 700, color: '#c8860a', marginTop: '0.4rem' }}>+254 711 123 456</p>
               </div>
             </div>
 
@@ -131,7 +131,7 @@ const Contact = () => {
 
                   <div style={{ marginBottom: '1.25rem' }}>
                     <label style={labelStyle}>Full Name *</label>
-                    <input type="text" name="name" value={form.name} onChange={handleChange} required placeholder="John Doe" style={inputStyle}
+                    <input type="text" name="name" value={form.name} onChange={handleChange} required placeholder="Alex Kariuki" style={inputStyle}
                       onFocus={e => e.target.style.borderColor = '#c8860a'}
                       onBlur={e => e.target.style.borderColor = '#e0d8d0'}
                     />
@@ -139,7 +139,7 @@ const Contact = () => {
 
                   <div style={{ marginBottom: '1.25rem' }}>
                     <label style={labelStyle}>Email Address *</label>
-                    <input type="email" name="email" value={form.email} onChange={handleChange} required placeholder="john@example.com" style={inputStyle}
+                    <input type="email" name="email" value={form.email} onChange={handleChange} required placeholder="alexkariuki@example.com" style={inputStyle}
                       onFocus={e => e.target.style.borderColor = '#c8860a'}
                       onBlur={e => e.target.style.borderColor = '#e0d8d0'}
                     />
