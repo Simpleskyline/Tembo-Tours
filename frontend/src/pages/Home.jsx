@@ -53,7 +53,7 @@ const TOP_DESTINATIONS = [
     id: 3,
     name: 'Mount Kenya',
     description: 'Africa\'s second highest peak',
-    image: 'https://images.unsplash.com/photo-1590688711-d9f3f76f0f6c?auto=format&fit=crop&q=80&w=800',
+    image: 'https://abiri.home.blog/wp-content/uploads/2019/12/mount-kenya-1.jpg',
     tourCount: 4,
   },
 ];
