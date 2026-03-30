@@ -22,6 +22,7 @@ body {
   background-color: var(--light);
   color: var(--dark);
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4 {
@@ -55,7 +56,7 @@ button {
 }
 
 .section-title {
-  font-size: 2.5rem;
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
   margin-bottom: 0.75rem;
   color: var(--dark);
 }
@@ -117,13 +118,13 @@ button {
 
 .grid-3 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
 }
 
 .grid-2 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
 }
 
@@ -149,10 +150,11 @@ button {
 .page-hero-content {
   position: relative;
   z-index: 1;
+  padding: 0 5%;
 }
 
 .page-hero-content h1 {
-  font-size: 3rem;
+  font-size: clamp(1.8rem, 5vw, 3rem);
   margin-bottom: 0.5rem;
 }
 
@@ -171,4 +173,37 @@ button {
   border-radius: 4px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 3.5rem 5%;
+  }
+
+  .section-subtitle {
+    margin-bottom: 2rem;
+  }
+
+  .grid-3,
+  .grid-2 {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 2.5rem 5%;
+  }
+
+  .btn-primary,
+  .btn-outline {
+    width: 100%;
+    text-align: center;
+    padding: 14px 20px;
+  }
+
+  .page-hero {
+    height: 280px;
+  }
 }
