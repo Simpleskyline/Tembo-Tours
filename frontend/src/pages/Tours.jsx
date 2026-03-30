@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import TourCard from '../components/TourCard';
 
 const ALL_TOURS = [
-  { id: 1, title: 'Maasai Mara Safari', destination: 'Maasai Mara', duration: '3 Days, 2 Nights', price_kes: 45000, image: 'https://images.unsplash.com/photo-1547970810-dc1eac37d174?auto=format&fit=crop&q=80&w=800', is_featured: true },
+  { id: 1, title: 'Maasai Mara Safari', destination: 'Maasai Mara', duration: '4 Days, 3 Nights', price_kes: 45000, image: 'https://images.unsplash.com/photo-1547970810-dc1eac37d174?auto=format&fit=crop&q=80&w=800', is_featured: true },
   { id: 2, title: 'Amboseli & Kilimanjaro Views', destination: 'Amboseli', duration: '2 Days, 1 Night', price_kes: 28000, image: 'https://images.unsplash.com/photo-1523805009345-7448845a9e53?auto=format&fit=crop&q=80&w=800', is_featured: false },
   { id: 3, title: 'Diani Beach Getaway', destination: 'Mombasa Coast', duration: '4 Days, 3 Nights', price_kes: 55000, image: 'https://content.r9cdn.net/rimg/dimg/85/ac/09a0a8d3-city-61964-1651e628a44.jpg?width=1366&height=768&xhint=1826&yhint=1097&crop=true', is_featured: true },
   { id: 4, title: 'Lake Nakuru Flamingo Tour', destination: 'Nakuru', duration: '1 Day', price_kes: 12000, image: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/24/01/c3/40/visit-lake-nakuru-and.jpg?w=1200&h=-1&s=1', is_featured: false },
@@ -40,7 +40,7 @@ const Tours = () => {
                 onClick={() => setFilter(dest)}
                 style={{
                   padding: '8px 18px',
-                  border: filter === dest ? '2px solid #c8860a' : '2px solid #e0d8d0',
+                  border: filter === dest ? '2px solid #c8860a' : '2px solid #050505',
                   borderRadius: '30px',
                   background: filter === dest ? '#c8860a' : 'transparent',
                   color: filter === dest ? '#fff' : '#555',

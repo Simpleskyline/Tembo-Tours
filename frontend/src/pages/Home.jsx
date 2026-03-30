@@ -29,7 +29,7 @@ const FEATURED_TOURS = [
     destination: 'Diani, Mombasa',
     duration: '4 Days, 3 Nights',
     price_kes: 55000,
-    image: 'https://images.unsplash.com/photo-1571501679680-de32f1e7aad4?auto=format&fit=crop&q=80&w=800',
+    image: 'https://content.r9cdn.net/rimg/dimg/85/ac/09a0a8d3-city-61964-1651e628a44.jpg?width=1366&height=768&xhint=1826&yhint=1097&crop=true',
     is_featured: true,
   },
 ];
@@ -59,10 +59,10 @@ const TOP_DESTINATIONS = [
 ];
 
 const WHY_US = [
-  { icon: '🌍', title: 'Expert Local Guides', desc: 'Our guides are born and raised in these landscapes and know every trail.' },
-  { icon: '💰', title: 'Best Value Packages', desc: 'Premium safari experiences starting from just KES 15,000 per person.' },
-  { icon: '🛡️', title: 'Safe & Reliable', desc: 'Your safety is our top priority. All vehicles are insured and maintained.' },
-  { icon: '📞', title: '24/7 Support', desc: 'Round-the-clock support before, during and after your journey.' },
+  { title: 'Expert Local Guides', desc: 'Our guides are born and raised in these landscapes and know every trail.' },
+  { title: 'Best Value Packages', desc: 'Premium safari experiences starting from just KES 15,000 per person.' },
+  { title: 'Safe & Reliable', desc: 'Your safety is our top priority. All vehicles are insured and maintained.' },
+  { title: '24/7 Support', desc: 'Round-the-clock support before, during and after your journey.' },
 ];
 
 const Home = () => {
@@ -97,7 +97,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="section" style={{ background: '#fff' }}>
+      <section className="section" style={{ background: '#ecc154' }}>
         <div className="container" style={{ textAlign: 'center' }}>
           <h2 className="section-title">Why Choose Tembo Tours?</h2>
           <p className="section-subtitle">Over 15 years of creating unforgettable Kenyan adventures</p>
@@ -107,7 +107,7 @@ const Home = () => {
                 <span style={{ fontSize: '2rem', flexShrink: 0 }}>{icon}</span>
                 <div>
                   <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: '1.15rem', marginBottom: '0.5rem' }}>{title}</h3>
-                  <p style={{ color: '#666', fontSize: '0.9rem', lineHeight: 1.7 }}>{desc}</p>
+                  <p style={{ color: '#0e0d0d', fontSize: '0.9rem', lineHeight: 1.7 }}>{desc}</p>
                 </div>
               </div>
             ))}

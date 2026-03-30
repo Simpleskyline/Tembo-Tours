@@ -113,11 +113,11 @@ const Accommodation = () => {
                     <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: '1.15rem', color: '#1a1a1a' }}>
                       {acc.name}
                     </h3>
-                    <span style={{ color: '#f0b429', fontSize: '0.85rem', flexShrink: 0, marginLeft: '0.5rem' }}>
+                    <span style={{ color: '#080808', fontSize: '0.85rem', flexShrink: 0, marginLeft: '0.5rem' }}>
                       {stars(acc.stars)}
                     </span>
                   </div>
-                  <p style={{ fontSize: '0.82rem', color: '#c8860a', fontWeight: 600, marginBottom: '0.75rem' }}>
+                  <p style={{ fontSize: '0.82rem', color: '#f70606', fontWeight: 600, marginBottom: '0.75rem' }}>
                     📍 {acc.location}
                   </p>
                   <p style={{ color: '#666', fontSize: '0.88rem', lineHeight: 1.7, marginBottom: '1rem' }}>
@@ -132,13 +132,13 @@ const Accommodation = () => {
                   </div>
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', paddingTop: '1rem', borderTop: '1px solid #f0e8e0' }}>
                     <div>
-                      <p style={{ fontSize: '0.78rem', color: '#888' }}>From</p>
+                      <p style={{ fontSize: '0.78rem', color: '#0c0c0c' }}>From</p>
                       <p style={{ fontWeight: 700, color: '#c8860a', fontSize: '1.1rem' }}>
-                        KES {acc.priceFrom.toLocaleString()}<span style={{ fontSize: '0.8rem', color: '#888', fontWeight: 400 }}>/night</span>
+                        KES {acc.priceFrom.toLocaleString()}<span style={{ fontSize: '0.8rem', color: '#131212', fontWeight: 400 }}>/night</span>
                       </p>
                     </div>
                     <Link to="/contact" style={{
-                      background: '#c8860a', color: '#fff',
+                      background: '#00BFFF', color: '#fff',
                       padding: '9px 20px', borderRadius: '6px',
                       fontWeight: 600, fontSize: '0.88rem',
                       fontFamily: "'DM Sans', sans-serif",

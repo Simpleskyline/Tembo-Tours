@@ -74,15 +74,15 @@ const Contact = () => {
 
             <div>
               <h2 className="section-title" style={{ marginBottom: '1rem', fontSize: '2rem' }}>Get In Touch</h2>
-              <p style={{ color: '#666', lineHeight: 1.8, marginBottom: '2.5rem' }}>
+              <p style={{ color: '#100f0f', lineHeight: 1.8, marginBottom: '2.5rem' }}>
                 Whether you want to book a tour, enquire about accommodation, or just have a question, our team is happy to help.
               </p>
 
               {[
-                { icon: '📍', title: 'Our Office', info: 'Waiyaki Way, Nairobi, Kenya' },
-                { icon: '📞', title: 'Phone', info: '+254 712 345 678' },
-                { icon: '📧', title: 'Email', info: 'info@tembotours.co.ke' },
-                { icon: '🕐', title: 'Working Hours', info: 'Mon-Sat: 8am - 6pm EAT' },
+                {title: 'Our Office', info: 'Waiyaki Way, Nairobi, Kenya' },
+                {title: 'Phone', info: '+254 712 345 678'},
+                {title: 'Email', info: 'info@tembotours.co.ke' },
+                {title: 'Working Hours', info: 'Mon-Sat: 8am - 4pm EAT' },
               ].map(({ icon, title, info }) => (
                 <div key={title} style={{ display: 'flex', gap: '1rem', marginBottom: '1.5rem', alignItems: 'flex-start' }}>
                   <span style={{ fontSize: '1.4rem', flexShrink: 0 }}>{icon}</span>
@@ -93,14 +93,14 @@ const Contact = () => {
                 </div>
               ))}
 
-              <div style={{ marginTop: '2rem', padding: '1.5rem', background: '#fdf5e8', borderRadius: '10px', borderLeft: '4px solid #c8860a' }}>
+              <div style={{ marginTop: '2rem', padding: '1.5rem', background: '#fdf5e8', borderRadius: '10px', borderLeft: '4px solid #131313' }}>
                 <p style={{ fontWeight: 600, marginBottom: '0.4rem', color: '#1a1a1a' }}>Emergency Line</p>
                 <p style={{ color: '#666', fontSize: '0.88rem' }}>For urgent assistance during your tour, call our 24/7 hotline:</p>
-                <p style={{ fontWeight: 700, color: '#c8860a', marginTop: '0.4rem' }}>+254 711 123 456</p>
+                <p style={{ fontWeight: 700, color: '#0a0a0a', marginTop: '0.4rem' }}>+254 711 123 456</p>
               </div>
             </div>
 
-            <div style={{ background: '#faf8f5', borderRadius: '16px', padding: '2.5rem', border: '1px solid #ede5d8' }}>
+            <div style={{ background: '#faf8f5', borderRadius: '16px', padding: '2.5rem', border: '1px solid #0b0b0b' }}>
               {submitted ? (
                 <div style={{ textAlign: 'center', padding: '3rem 0' }}>
                   <span style={{ fontSize: '3rem' }}>🎉</span>
@@ -173,8 +173,8 @@ const Contact = () => {
                     disabled={loading}
                     style={{
                       width: '100%',
-                      background: loading ? '#d4a040' : '#c8860a',
-                      color: '#fff',
+                      background: loading ? '#d4a040' : '#00BFFF',
+                      color: '#080808',
                       border: 'none',
                       padding: '14px',
                       borderRadius: '8px',

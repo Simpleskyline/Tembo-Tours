@@ -31,7 +31,7 @@ const Navbar = () => {
     boxShadow: transparent ? 'none' : '0 2px 20px rgba(0,0,0,0.08)',
   };
 
-  const linkColor = transparent ? '#c8860a' : '#060605';
+  const linkColor = transparent ? '#131210' : '#060605';
   const logoColor = transparent ? '#c8860a' : '#c8860a';
 
   const links = [
@@ -82,7 +82,7 @@ const Navbar = () => {
           <Link
             to="/contact"
             style={{
-              background: '#c8860a',
+              background: '#00BFFF',
               color: '#ffffff',
               padding: '10px 22px',
               borderRadius: '6px',

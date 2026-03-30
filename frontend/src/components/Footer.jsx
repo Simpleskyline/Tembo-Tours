@@ -7,7 +7,6 @@ const Footer = () => {
       <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 5%', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '3rem', paddingBottom: '3rem' }}>
         <div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '1rem' }}>
-            <span style={{ fontSize: '1.8rem' }}>🐘</span>
             <span style={{ fontFamily: "'Playfair Display', serif", color: '#c8860a', fontSize: '1.3rem', fontWeight: 700 }}>
               Tembo Tours
             </span>
@@ -85,7 +84,7 @@ const Footer = () => {
               }}
             />
             <button style={{
-              background: '#c8860a',
+              background: '#00BFFF',
               color: '#fff',
               border: 'none',
               padding: '10px 16px',
@@ -101,7 +100,7 @@ const Footer = () => {
       </div>
 
       <div style={{ borderTop: '1px solid #2a2a2a', padding: '1.5rem 5%', textAlign: 'center', fontSize: '0.85rem', color: '#555' }}>
-        <p>2025 Tembo Tours. All rights reserved. Proudly Kenyan.</p>
+        <p>2026 Tembo Tours. All rights reserved. Proudly Kenyan.</p>
       </div>
     </footer>
   );

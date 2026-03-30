@@ -6,7 +6,7 @@ const TourCard = ({ tour }) => {
     <div className="card">
       <div style={{ height: '250px', position: 'relative', borderBottom: '2px solid #000' }}>
         <img src={tour.image} alt={tour.title} style={{ height: '100%', objectFit: 'cover' }} />
-        <div style={{ position: 'absolute', bottom: 0, left: 0, background: '#00BFFF', color: '#000', padding: '5px 15px', fontWeight: 'bold', fontSize: '0.8rem' }}>
+        <div style={{ position: 'absolute', bottom: 0, left: 0, background: '#f3ae2d', color: '#000', padding: '5px 15px', fontWeight: 'bold', fontSize: '0.8rem' }}>
           {tour.duration}
         </div>
       </div>

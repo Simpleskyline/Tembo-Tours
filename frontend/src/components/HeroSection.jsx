@@ -48,7 +48,7 @@ const HeroSection = () => {
       </p>
       <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
         <Link to="/tours" className="btn-primary" style={{
-          background: '#c8860a',
+          background: '#f4bb51',
           color: '#fff',
           padding: '15px 35px',
           borderRadius: '6px',
