@@ -62,7 +62,7 @@ const Destinations = () => {
     <div>
       <div
         className="page-hero"
-        style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&q=80&w=2000")' }}
+        style={{ backgroundImage: 'url("https://ajkenyasafaris.com/wp-content/uploads/2023/06/image2-77-1024x684.webp")' }}
       >
         <div className="page-hero-content">
           <h1>Our Destinations</h1>
